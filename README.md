@@ -7,6 +7,12 @@ Test utilities for working with guzzle mock handler in tests
 composer require --dev myparcelcom/guzzle-mock
 ```
 
+## PHP 7/8
+The minimum PHP version is `7.4`. To update dependencies on a system without PHP 7 or 8 use:
+```shell
+docker run --rm --mount type=bind,source="$(pwd)",target=/app composer:2 composer update --ignore-platform-reqs
+```
+
 ## Usage
 
 ```php
